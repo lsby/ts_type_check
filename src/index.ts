@@ -35,7 +35,7 @@ export default function main(opt: { 使用文件缓存: boolean }) {
                 r._构建缓存(ts类型文件路径)
             } else {
                 var 文件缓存路径 = path.resolve(path.dirname(ts类型文件路径), path.basename(ts类型文件路径) + '.typeCheck')
-                var 类型文件内容 = await fs.promises.readFile(path.resolve(ts类型文件路径)).toString()
+                var 类型文件内容 = (await fs.promises.readFile(path.resolve(ts类型文件路径))).toString()
                 var 类型文件哈希 = md5(类型文件内容)
                 var 缓存文件内容: { 类型文件哈希: string, 内容: string } | null = null
 
