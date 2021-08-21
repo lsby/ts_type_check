@@ -1,6 +1,6 @@
 {
     "name": "@lsby/ts_type_check",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "在ts中, 运行时检查数据类型.",
     "main": "dist/index.js",
     "scripts": {
@@ -16,12 +16,14 @@
     "author": "",
     "devDependencies": {
         "@lsby/js_tools": "^0.0.3",
+        "@types/md5": "^2.3.1",
         "@types/mocha": "^8.2.2",
         "ts-mocha": "^8.0.0",
         "typescript": "^4.2.4"
     },
     "dependencies": {
         "jsonschema": "^1.4.0",
+        "md5": "^2.3.0",
         "typescript-json-schema": "^0.50.1"
     }
 }
