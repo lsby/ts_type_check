@@ -2,6 +2,12 @@
 
 在运行中检查数据类型
 
+## 安装
+
+```shell
+npm i @lsby/ts_type_check
+```
+
 ## 使用
 
 先编写类型文件:
@@ -19,7 +25,7 @@ export interface 返回数据 { 结果: number }
 // index.ts
 
 import path from "path"
-import ts_type_check from "ts_type_check"
+import ts_type_check from "@lsby/ts_type_check"
 
 var 验证器 = ts_type_check()
 验证器.构建缓存(path.resolve(__dirname, './data.ts'))

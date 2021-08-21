@@ -1,6 +1,6 @@
 {
     "name": "@lsby/ts_type_check",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -10,7 +10,8 @@
         "test": "ts-mocha --bail test/**/*.test.ts",
         "clean_node_modules": "rm -rf ./node_modules",
         "clean_dist": "rm -rf ./dist",
-        "clean": "npm run clean_node_modules && npm run clean_dist"
+        "clean": "npm run clean_node_modules && npm run clean_dist",
+        "publish": "npm publish --access=public"
     },
     "author": "",
     "devDependencies": {
