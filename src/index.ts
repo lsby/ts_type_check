@@ -30,6 +30,8 @@ export default function main(ts类型文件路径: string) {
                 }
                 缓存[ts类型文件路径]![name] = JSON.parse(json_str)
             }
+
+            return r
         },
         async 构建缓存() {
             缓存[ts类型文件路径] = null
@@ -58,6 +60,8 @@ export default function main(ts类型文件路径: string) {
                     }),
                 )
             }
+
+            return r
         },
         async 验证(类型名称: string, 检查数据: any): Promise<ValidatorResult> {
             if (缓存[ts类型文件路径] == null || 缓存[ts类型文件路径]![类型名称] == null) {
