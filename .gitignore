@@ -104,3 +104,4 @@ dist
 .tern-port
 
 .typeCheck
+test/data.ts.typeCheck
