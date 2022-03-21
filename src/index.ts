@@ -73,6 +73,9 @@ export default function main(ts类型文件路径: string) {
 
             return 数据验证
         },
+        async check(类型名称: string, 检查数据: any): Promise<ValidatorResult> {
+            return await r.验证(类型名称, 检查数据)
+        },
     }
 
     return r
